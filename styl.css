@@ -384,8 +384,9 @@ iframe {
 }
 
 @media (max-width: 768px) {
-  .galeria {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr 1fr));
+   .galeria {
+    grid-template-columns: 1fr 1fr;
+    margin: 10px;
   }
   body {
     font-size: 14px;
