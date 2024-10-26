@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400&family=Montserrat:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <title>studencka odyseja</title>
+    <link rel="stylesheet" href="styl.css" />
+    <link rel="icon" type="image/x-icon" href="images/logo_1.png" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="skrypt.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <img src="images/logo_0.png" alt="Logo" class="obrazek_na_srodku" />
+      <nav>
+        <ul>
+          <li><a href="home.html">home</a></li>
+          <li>
+            <a href="podroze.html">podróże</a>
+            <ul>
+              <li><a href="wegry.html">węgry</a></li>
+              <li><a href="slowenia.html">słowenia</a></li>
+              <li><a href="chorwacja.html">chorwacja</a></li>
+            </ul>
+          </li>
+          <li><a href="kontakt.html" class="active">kontakt</a></li>
+        </ul>
+        <div id="clock" class="clock"></div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="czytelny_artykul">
+        <h2>Poznajmy się!</h2>
+        <div class="owner-info">
+          <img src="images/ja.jpg" alt="Klaudia" class="owner-photo" />
+          <div class="dane_kontaktowe">
+            <p>
+              Jestem Klaudia i jestem niezłomną podróżniczką, która przemierza
+              nie tylko mapy, ale także życie! Z pasją studiuje
+              <strong>Informatykę Data Science</strong>, odkrywając tajemnice
+              danych i ich moc w dzisiejszym świecie.
+            </p>
+            <p>
+              Jestem również miłośniczką <strong>soft skilli</strong>, możecie
+              posłuchać mnie podczas Soft Skills Academy organizowanej przez
+              EESTEC AGH Kraków!
+            </p>
+          </div>
+        </div>
+
+        <!-- Sekcja formularza -->
+        <div class="formularz">
+          <h2>Formularz Kontaktowy</h2>
+          <p>Masz ochotę się ze mną gdzieś wybrać?</p>
+          <p>
+            A może dostarczysz ze mną szkolenie z umiejętności miękkich?
+            Koniecznie wypełnij poniższy formularz, a ja skontaktuję się z Tobą
+            lada moment!
+          </p>
+          <form id="formularz_kontaktowy" onsubmit="validateForm()">
+            <label for="email">Adres e-mail:</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="odyseusz@gmail.com"
+              name="email"
+              required
+            />
+            <label for="topic">Temat wiadomości:</label>
+            <select id="topic" name="topic" required>
+              <option value="" disabled selected>Wybierz temat</option>
+              <option value="Podróże">Podróże</option>
+              <option value="SoftSkille">Soft Skille</option>
+              <option value="Inne">Inne</option>
+            </select>
+            <label for="message">Wiadomość:</label>
+            <textarea
+              id="message"
+              placeholder="Mam chomika Stefana"
+              name="message"
+              required
+            ></textarea>
+            <button type="submit">Wyślij</button>
+            <div id="error" class="error-message"></div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        &copy; Projekt Klaudii Stodółkiewicz na przedmiot Wprowadzenie do
+        aplikacji internetowych. Wszelkie prawa zastrzeżone. |
+        <a href="kontakt.html">Kontakt</a>
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400&family=Montserrat:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styl.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="skrypt.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="images/logo_1.png" />
+    <title>studencka odyseja</title>
+  </head>
+
+  <header>
+    <img src="images\logo_0.png" class="obrazek_na_srodku" />
+    <nav>
+      <ul>
+        <li><a href="home.html" class="active">home</a></li>
+        <li>
+          <a href="podroze.html">podróże</a>
+          <ul>
+            <li><a href="wegry.html">węgry</a></li>
+            <li><a href="slowenia.html">słowenia</a></li>
+            <li><a href="chorwacja.html">chorwacja</a></li>
+          </ul>
+        </li>
+        <li><a href="kontakt.html">kontakt</a></li>
+      </ul>
+      <div id="clock" class="clock"></div> 
+  </header>
+  
+  <div id="cookie-banner" style="display: none;">
+    <p>Nasza strona używa plików cookies. Proszę wybrać swoje preferencje.</p>
+    <button onclick="acceptCookies()">Akceptuj wszystkie</button>
+    <button onclick="rejectCookies()">Odrzuć wszystkie</button>
+    <button onclick="openSettings()">Ustawienia</button>
+</div>
+
+<div id="cookie-settings" style="display: none;">
+    <h3>Ustawienia plików cookies</h3>
+    <label>
+        <input type="checkbox" id="analyticsCookies"> Pliki cookies analityczne
+    </label>
+    <label>
+        <input type="checkbox" id="marketingCookies"> Pliki cookies marketingowe
+    </label>
+    <button onclick="saveSettings()">Zapisz ustawienia</button>
+</div>
+
+  <body>
+    <article class="czytelny_artykul">
+      <h2>Ahoj, kamracie!</h2>
+      <p>Fajno, żeś wpłynął na moją blogową tratwę!</p>
+      <p>
+        Jak to przystało na prawdziwego tułacza, czasem sobie pomarudzę, a
+        czasem dorzucę radę, bo przecież życie na tej akademikowej łajbie łatwe
+        nie jest. U mnie znajdziesz patenty, jak przeżyć z groszem w kieszeni, a
+        i jak nie marnować tych młodzieńczych lat na suchych lądach. Bo studia
+        to taki rejs po wzburzonych wodach – raz płyniesz spokojnie, a raz cię
+        sztorm kolokwiów zaskoczy.
+      </p>
+      <p>
+        Swój Eden odkryłam na szlaku przygód – podróże, akcje poza uczelnią,
+        ładowanie się w różne organizacje i szukanie spokoju w mindfulnessie.
+        Ale moja Itaka to jeszcze odległy port, ciągle jestem na kursie, szukam
+        nowych lądów i uczę się mapy życia.
+      </p>
+      <p>Chcesz mi towarzyszyć kamracie?</p>
+      <p>Z doświadczenia radzę, z rozumem gadam i z serca wspieram</p>
+      <p class="podpis">Klaudia</p>
+    </article>
+    <article class="aktualnosci">
+      <h3>Aktualności</h3>
+      <div class="aktualnosci-wrapper">
+        <div class="post">
+          <a href="wegry.html">
+            <img
+              src="images\statek_budapeszt.jpg"
+              alt="Polak Węgier dwa bratanki"
+            />
+            <h4>Polak Węgier dwa bratanki</h4>
+            <p>Jak miło i tanio zwiedzić Budapeszt?</p>
+          </a>
+        </div>
+        <div class="post">
+          <a href="slowenia.html">
+            <img
+              src="images\jezioro_slowenia.jpg"
+              alt="Road-trip po Słowenii"
+            />
+            <h4>Road-trip po Słowenii</h4>
+            <p>Czy w Słowenii jest rzeczywiście tak drogo?</p>
+          </a>
+        </div>
+        <div class="post">
+          <a href="chorwacja.html">
+            <img
+              src="images\zachod_chorwacja.jpg"
+              alt="Cykady + Polacy = Chorwacja"
+            />
+            <h4>Cykady + Polacy = Chorwacja</h4>
+            <p>W Chorwacji leży się tylko plackiem?</p>
+          </a>
+        </div>
+      </div>
+    </article>
+   
+  </body>
+
+  <footer>
+    <p>
+      &copy; Projekt Klaudii Stodółkiewicz na przedmiot Wprowadzenie do
+      aplikacji internetowych. Wszelkie prawa zastrzeżone. |
+      <a href="kontakt.html">Kontakt</a>
+    </p>
+  </footer>
+</html>
